@@ -48,7 +48,6 @@
           </b-card-text>
         <validation-observer
           ref="loginForm"
-          #default="{invalid}"
         >
           <b-form
             class="auth-login-form mt-2"
@@ -145,14 +144,15 @@
             </b-form-group>
 
             <!-- submit button -->
-            <b-button
+            <b-link :to="{ path: '/super-dashboard'}"
+          class="font-weight-bold"
+        ><b-button
               variant="primary"
               type="submit"
               block
-              :disabled="invalid"
             >
               Sign in
-            </b-button>
+            </b-button></b-link>
           </b-form>
         </validation-observer>
         </b-col>

@@ -3,9 +3,9 @@
     v-if="data"
     class="card-congratulation-medal"
   >
-    <h5>Congratulations 🎉 {{ data.name }}!</h5>
+    <h5>Congratulations 🎉 Abhijit!</h5>
     <b-card-text class="font-small-3">
-      You have won gold medal
+      Check all The Orders here
     </b-card-text>
     <h3 class="mb-75 mt-2 pt-50">
       <b-link>${{ kFormatter(data.saleToday) }}</b-link>
@@ -17,9 +17,9 @@
       View Sales
     </b-button>
     <b-img
-      :src="require('@/assets/images/illustration/badge.svg')"
+      :src="require('@/assets/images/logo/logo.png')"
       class="congratulation-medal"
-      alt="Medal Pic"
+      alt="Logo"
     />
   </b-card>
 </template>

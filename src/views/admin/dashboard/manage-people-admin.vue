@@ -6,10 +6,19 @@
         <div class="card-body">
           <div class="custom-search d-flex justify-content-between">
             <fieldset class="form-group d-flex">
-              <div class="d-flex align-items-center mr-2"><input type="text" placeholder="Search With ID" class="d-inline-block form-control" id="__BVID__669"></div>
+              <div class="d-flex align-items-center"><select class="d-inline-block form-control pr-4"><option>Sumit Roy</option><option>Mukesh Ambani</option><option>Ajim Premji</option></select></div>
             </fieldset>
             <fieldset class="form-group">
-              <div class="d-flex align-items-center"><select class="d-inline-block form-control pr-4"><option>GM Tech</option><option>Philips Tech</option><option>Havels Tech</option></select></div>
+              <div class="d-flex align-items-center">
+                <b-button
+                  v-ripple.400="'rgba(113, 102, 240, 0.15)'"
+                  v-b-modal.modal-1
+                  variant="outline-primary"
+                  class="btn btn-primary"
+                >
+                  Add People
+                </b-button>
+              </div>
             </fieldset>
           </div>
           <div class="vgt-wrap ">
@@ -19,25 +28,22 @@
                   <tr>
                     <!---->
                     <th class="vgt-checkbox-col"><input type="checkbox"></th>
-                    <th class="vgt-left-align sortable" style="min-width: auto; width: auto;"><span>Email ID</span></th>
-                    <th class="vgt-left-align sortable" style="min-width: auto; width: auto;"><span>Name</span></th>
-                    <th class="vgt-left-align sortable" style="min-width: auto; width: auto;"><span>Linked Device</span></th>
+                    <th class="vgt-left-align sortable" style="min-width: auto; width: auto;"><span>People Name</span></th>
+                    <th class="vgt-left-align sortable" style="min-width: auto; width: auto;"><span>Assigned Work</span></th>
+                    <th class="vgt-left-align sortable" style="min-width: auto; width: auto;"><span>Timeline</span></th>
                     <th class="vgt-left-align sortable" style="min-width: auto; width: auto;"><span>Status</span></th>
+                    <th class="vgt-left-align sortable" style="min-width: auto; width: auto;"><span>Upcoming Event</span></th>
                     <th class="vgt-left-align sortable" style="min-width: auto; width: auto;"><span>Action</span></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr class="">
                     <th class="vgt-checkbox-col"><input type="checkbox"></th>
-                    <td class="vgt-left-align"><span> gm@abc.com </span></td>
-                    <td class="vgt-left-align"><span> GM Tech </span></td>
-                    <td class="vgt-left-align"><span> <b-button
-                  v-b-modal.modal-1
-                  class="btn-text"
-                >
-                  100
-                </b-button> </span></td>
-                    <td class="vgt-left-align"><span class="badge badge-light-success badge-pill"> Online </span></td>
+                    <td class="vgt-left-align"><span> Sumit Roy </span></td>
+                    <td class="vgt-left-align"><span> App Design Fix </span></td>
+                    <td class="vgt-left-align"><span> 32 Hrs </span></td>
+                    <td class="vgt-left-align"><span class="badge badge-light-success badge-pill"> Completed </span></td>
+                    <td class="vgt-left-align"><span> Design Show Event </span></td>
                     <td class="vgt-left-align">
                       <b-dropdown
                         variant="link"
@@ -56,29 +62,32 @@
                             icon="EyeIcon"
                             class="mr-50"
                             />
-                          <span>Details</span>
+                          <span>View</span>
+                        </b-dropdown-item>
+                        <b-dropdown-item>
+                          <feather-icon
+                            icon="Edit2Icon"
+                            class="mr-50"
+                            />
+                          <span>Edit</span>
                         </b-dropdown-item>
                         <b-dropdown-item>
                           <feather-icon
                             icon="SlashIcon"
                             class="mr-50"
                             />
-                          <span>Block</span>
+                          <span>Delete</span>
                         </b-dropdown-item>
                       </b-dropdown>
                     </td>
                   </tr>
                   <tr class="">
                     <th class="vgt-checkbox-col"><input type="checkbox"></th>
-                    <td class="vgt-left-align"><span> Test@abc.com </span></td>
-                    <td class="vgt-left-align"><span> Test Tech </span></td>
-                    <td class="vgt-left-align"><span> <b-button
-                  v-b-modal.modal-1
-                  class="btn-text"
-                >
-                  68
-                </b-button> </span></td>
-                    <td class="vgt-left-align"><span class="badge badge-light-secondary badge-pill"> Offline </span></td>
+                    <td class="vgt-left-align"><span> Mukesh Ambani </span></td>
+                    <td class="vgt-left-align"><span> Jio Network issue </span></td>
+                    <td class="vgt-left-align"><span> 24 Hrs </span></td>
+                    <td class="vgt-left-align"><span class="badge badge-light-secondary badge-pill"> Pending </span></td>
+                    <td class="vgt-left-align"><span> Network speed Test </span></td>
                     <td class="vgt-left-align">
                       <b-dropdown
                         variant="link"
@@ -97,29 +106,32 @@
                             icon="EyeIcon"
                             class="mr-50"
                             />
-                          <span>Details</span>
+                          <span>View</span>
+                        </b-dropdown-item>
+                        <b-dropdown-item>
+                          <feather-icon
+                            icon="Edit2Icon"
+                            class="mr-50"
+                            />
+                          <span>Edit</span>
                         </b-dropdown-item>
                         <b-dropdown-item>
                           <feather-icon
                             icon="SlashIcon"
                             class="mr-50"
                             />
-                          <span>Block</span>
+                          <span>Delete</span>
                         </b-dropdown-item>
                       </b-dropdown>
                     </td>
                   </tr>
                   <tr class="">
                     <th class="vgt-checkbox-col"><input type="checkbox"></th>
-                    <td class="vgt-left-align"><span> users@abc,com </span></td>
-                    <td class="vgt-left-align"><span> ABC Tech </span></td>
-                    <td class="vgt-left-align"><span> <b-button
-                  v-b-modal.modal-1
-                  class="btn-text"
-                >
-                  34
-                </b-button> </span></td>
-                    <td class="vgt-left-align"><span class="badge badge-light-success badge-pill"> Online </span></td>
+                    <td class="vgt-left-align"><span> Ajim Premji </span></td>
+                    <td class="vgt-left-align"><span> Telecalling Issue Fix </span></td>
+                    <td class="vgt-left-align"><span> 24 Hrs </span></td>
+                    <td class="vgt-left-align"><span class="badge badge-light-primary badge-pill"> Working </span></td>
+                    <td class="vgt-left-align"><span> Tele event </span></td>
                     <td class="vgt-left-align">
                       <b-dropdown
                         variant="link"
@@ -138,14 +150,21 @@
                             icon="EyeIcon"
                             class="mr-50"
                             />
-                          <span>Details</span>
+                          <span>View</span>
+                        </b-dropdown-item>
+                        <b-dropdown-item>
+                          <feather-icon
+                            icon="Edit2Icon"
+                            class="mr-50"
+                            />
+                          <span>Edit</span>
                         </b-dropdown-item>
                         <b-dropdown-item>
                           <feather-icon
                             icon="SlashIcon"
                             class="mr-50"
                             />
-                          <span>Block</span>
+                          <span>Delete</span>
                         </b-dropdown-item>
                       </b-dropdown>
                     </td>
@@ -160,35 +179,63 @@
   </b-row>
   <b-modal
       id="modal-1"
-      title="Linked Devices"
+      title="Add People"
+      ok-title="Submit"
+      cancel-title="Reset"
     >
       <b-card-text>
-        <table class="table">
-         <thead>
-            <tr>
-              <th scope="col">Device ID</th>
-              <th scope="col">Device Type</th>
-              <th scope="col">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">78965</th>
-              <td>Switch</td>
-              <td><span class="badge badge-light-success badge-pill"> Online </span></td>
-            </tr>
-            <tr>
-              <th scope="row">14789</th>
-              <td>Light</td>
-              <td><span class="badge badge-light-secondary badge-pill"> Offline </span></td>
-            </tr>
-            <tr>
-              <th scope="row">36987</th>
-              <td>AC</td>
-              <td><span class="badge badge-light-success badge-pill"> Online </span></td>
-            </tr>
-          </tbody>
-        </table>
+        <b-form @submit.prevent>
+      <b-row>
+
+        <b-col cols="12">
+          <b-form-group
+            label="People Name"
+            label-for="v-name"
+          >
+            <b-form-input
+              id="v-name"
+              placeholder="Steve Jobs"
+            />
+          </b-form-group>
+        </b-col>
+
+        <!-- code -->
+        <b-col cols="12">
+          <b-form-group
+            label="Assigned Work"
+            label-for="v-work"
+          >
+            <b-form-input
+              id="v-work"
+              placeholder="Mobile issue"
+            />
+          </b-form-group>
+        </b-col>
+        <b-col cols="12">
+          <b-form-group
+            label="Timeline"
+            label-for="v-time"
+          >
+            <b-form-input
+              id="v-time"
+              type="number"
+              placeholder="24"
+            />
+          </b-form-group>
+        </b-col>
+        <b-col cols="12">
+          <b-form-group
+            label="Upcoming Events"
+            label-for="v-event"
+          >
+            <b-form-input
+              id="v-event"
+              placeholder="Mobile Expo"
+            />
+          </b-form-group>
+        </b-col>
+      </b-row>
+    </b-form>
       </b-card-text>
     </b-modal>
     <template #code>
@@ -199,17 +246,20 @@
 
 <script>
 import {
-  BModal, BRow, BCol, BDropdown, BDropdownItem,
+  BModal, BButton, BRow, BCol, BDropdown, BDropdownItem, BFormGroup, BFormInput, BForm,
 } from 'bootstrap-vue'
 
 export default {
   components: {
     BRow,
     BCol,
+    BButton,
     BModal,
     BDropdown,
     BDropdownItem,
-
+    BFormGroup,
+    BFormInput,
+    BForm,
   },
 }
 </script>

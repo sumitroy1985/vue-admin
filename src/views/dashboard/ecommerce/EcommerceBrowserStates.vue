@@ -5,9 +5,9 @@
   >
     <b-card-header>
       <div>
-        <b-card-title>Browser States</b-card-title>
+        <b-card-title>Company States</b-card-title>
         <b-card-text class="font-small-2">
-          Counter August 2020
+          Sales States August 2020
         </b-card-text>
       </div>
 
@@ -104,28 +104,28 @@ export default {
       chartSeries: [54.4, 6.1, 14.6, 4.2, 8],
       browserData: [
         {
-          browserImg: require('@/assets/images/icons/google-chrome.png'),
-          name: 'Google Chrome',
+          browserImg: require('@/assets/images/avatars/1.png'),
+          name: 'GM Infotech',
           usage: '54.4%',
         },
         {
-          browserImg: require('@/assets/images/icons/mozila-firefox.png'),
-          name: 'Mozila Firefox',
+          browserImg: require('@/assets/images/avatars/2.png'),
+          name: 'Philips Infotech',
           usage: '6.1%',
         },
         {
-          browserImg: require('@/assets/images/icons/apple-safari.png'),
-          name: 'Apple Safari',
+          browserImg: require('@/assets/images/avatars/3.png'),
+          name: 'Havels Infotech',
           usage: '14.6%',
         },
         {
-          browserImg: require('@/assets/images/icons/internet-explorer.png'),
-          name: 'Internet Explorer',
+          browserImg: require('@/assets/images/avatars/4.png'),
+          name: 'Kona Infotech',
           usage: '4.2%',
         },
         {
-          browserImg: require('@/assets/images/icons/opera.png'),
-          name: 'Opera Mini',
+          browserImg: require('@/assets/images/avatars/5.png'),
+          name: 'Sony Infotech',
           usage: '8.%',
         },
       ],
@@ -178,3 +178,14 @@ export default {
   },
 }
 </script>
+<style scoped>
+.browser-states .media {
+    display: flex;
+    align-items: center;
+}
+.media-aside.mr-1.align-self-start img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+</style>

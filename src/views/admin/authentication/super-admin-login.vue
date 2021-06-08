@@ -22,11 +22,9 @@
         <!-- form -->
         <validation-observer
           ref="loginForm"
-          #default="{invalid}"
         >
           <b-form
             class="auth-login-form mt-2"
-            @submit.prevent
           >
 
             <!-- email -->
@@ -66,7 +64,6 @@
               >
                 <b-input-group
                   class="input-group-merge"
-                  :class="errors.length > 0 ? 'is-invalid':null"
                 >
                   <b-form-input
                     id="password"
@@ -127,14 +124,15 @@
             </b-form-group>
 
             <!-- submit button -->
-            <b-button
+            <b-link :to="{ path: '/super-dashboard'}"
+          class="font-weight-bold"
+        ><b-button
               variant="primary"
               type="submit"
               block
-              :disabled="invalid"
             >
               Sign in
-            </b-button>
+            </b-button></b-link>
           </b-form>
         </validation-observer>
       </b-card>

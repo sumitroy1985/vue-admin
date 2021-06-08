@@ -18,28 +18,14 @@
     <b-row class="match-height">
       <b-col lg="4">
         <b-row class="match-height">
-          <!-- Bar Chart - Orders -->
-          <b-col
-            lg="6"
-            md="3"
-            cols="6"
-          >
-            <ecommerce-order-chart :data="data.statisticsOrder" />
-          </b-col>
-          <!--/ Bar Chart - Orders -->
-          <b-col
-            lg="6"
-            md="3"
-            cols="6"
-          >
-            <ecommerce-profit-chart :data="data.statisticsProfit" />
-          </b-col>
           <b-col
             lg="12"
-            md="6"
+            md="12"
+            cols="12"
           >
-            <ecommerce-earnings-chart :data="data.earningsChart" />
+            <ecommerce-transactions :data="data.transactionData" />
           </b-col>
+          <!-- Bar Chart - Orders -->
         </b-row>
       </b-col>
 
@@ -51,22 +37,6 @@
     </b-row>
 
     <b-row class="match-height">
-      <!-- Company Table Card -->
-      <b-col lg="8">
-        <ecommerce-company-table :table-data="data.companyTable" />
-      </b-col>
-      <!--/ Company Table Card -->
-
-      <!-- Developer Meetup Card -->
-      <b-col
-        lg="4"
-        md="6"
-      >
-        <ecommerce-meetup :data="data.meetup" />
-      </b-col>
-      <!--/ Developer Meetup Card -->
-
-      <!-- Browser States Card -->
       <b-col
         lg="4"
         md="6"
@@ -89,7 +59,11 @@
         lg="4"
         md="6"
       >
-        <ecommerce-transactions :data="data.transactionData" />
+        <ecommerce-order-chart :data="data.statisticsOrder" />
+        <ecommerce-earnings-chart :data="data.earningsChart" />
+      </b-col>
+      <b-col lg="12">
+        <ecommerce-company-table :table-data="data.companyTable" />
       </b-col>
       <!--/ Transaction Card -->
     </b-row>
@@ -100,17 +74,15 @@
 import { BRow, BCol } from 'bootstrap-vue'
 
 import { getUserData } from '@/auth/utils'
-import EcommerceMedal from './EcommerceMedal.vue'
-import EcommerceStatistics from './EcommerceStatistics.vue'
-import EcommerceRevenueReport from './EcommerceRevenueReport.vue'
-import EcommerceOrderChart from './EcommerceOrderChart.vue'
-import EcommerceProfitChart from './EcommerceProfitChart.vue'
-import EcommerceEarningsChart from './EcommerceEarningsChart.vue'
-import EcommerceCompanyTable from './EcommerceCompanyTable.vue'
-import EcommerceMeetup from './EcommerceMeetup.vue'
-import EcommerceBrowserStates from './EcommerceBrowserStates.vue'
-import EcommerceGoalOverview from './EcommerceGoalOverview.vue'
-import EcommerceTransactions from './EcommerceTransactions.vue'
+import EcommerceMedal from '@/views/dashboard/ecommerce/EcommerceMedal.vue'
+import EcommerceStatistics from '@/views/dashboard/ecommerce/EcommerceStatistics.vue'
+import EcommerceRevenueReport from '@/views/dashboard/ecommerce/EcommerceRevenueReport.vue'
+import EcommerceOrderChart from '@/views/dashboard/ecommerce/EcommerceOrderChart.vue'
+import EcommerceEarningsChart from '@/views/dashboard/ecommerce/EcommerceEarningsChart.vue'
+import EcommerceCompanyTable from '@/views/dashboard/ecommerce/EcommerceCompanyTable.vue'
+import EcommerceBrowserStates from '@/views/dashboard/ecommerce/EcommerceBrowserStates.vue'
+import EcommerceGoalOverview from '@/views/dashboard/ecommerce/EcommerceGoalOverview.vue'
+import EcommerceTransactions from '@/views/dashboard/ecommerce/EcommerceTransactions.vue'
 
 export default {
   components: {
@@ -120,11 +92,9 @@ export default {
     EcommerceMedal,
     EcommerceStatistics,
     EcommerceRevenueReport,
-    EcommerceOrderChart,
-    EcommerceProfitChart,
     EcommerceEarningsChart,
+    EcommerceOrderChart,
     EcommerceCompanyTable,
-    EcommerceMeetup,
     EcommerceBrowserStates,
     EcommerceGoalOverview,
     EcommerceTransactions,
@@ -152,15 +122,4 @@ export default {
 <style lang="scss">
 @import '@core/scss/vue/pages/dashboard-ecommerce.scss';
 @import '@core/scss/vue/libs/chart-apex.scss';
-</style>
-<style scoped>
-.browser-states .media {
-    display: flex;
-    align-items: center;
-}
-.media-aside.mr-1.align-self-start img {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-}
 </style>

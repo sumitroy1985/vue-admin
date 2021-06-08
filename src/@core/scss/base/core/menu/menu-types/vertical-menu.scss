@@ -293,3 +293,7 @@
 }
 // Import vertical-overlay-menu.scss for small screen support
 @import 'vertical-overlay-menu.scss';
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded{
+  width: 300px;
+}
