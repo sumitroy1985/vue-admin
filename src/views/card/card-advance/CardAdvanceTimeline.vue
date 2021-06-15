@@ -47,7 +47,7 @@
             <h6>Client Meeting</h6>
             <small class="timeline-item-time text-nowrap text-muted ml-1">45 min ago</small>
           </div>
-          <p>Project meeting with john @10:15am</p>
+          <p>Project meeting with Abhijit @10:15am</p>
           <b-media no-body>
             <b-media-aside class="mr-50">
               <b-avatar
@@ -57,7 +57,7 @@
             </b-media-aside>
             <b-media-body class="my-auto">
               <h6 class="mb-0">
-                John Doe (Client)
+                Abhijit Das(Client)
               </h6>
               <p class="mb-0">
                 CEO of Infibeam

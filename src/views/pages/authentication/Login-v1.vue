@@ -4,16 +4,16 @@
 
       <!-- Login v1 -->
       <b-card class="mb-0">
-        <b-link class="brand-logo">
+        <b-link :to="{ path: '/super-dashboard'}" class="brand-logo">
           <vuexy-logo />
 
           <h2 class="brand-text text-primary ml-1">
-            Vuexy
+            Lazot Technologies
           </h2>
         </b-link>
 
         <b-card-title class="mb-1">
-          Welcome to Vuexy! 👋
+          Welcome to Lazot Technologies!
         </b-card-title>
         <b-card-text class="mb-2">
           Please sign-in to your account and start the adventure
@@ -44,7 +44,7 @@
                   v-model="userEmail"
                   name="login-email"
                   :state="errors.length > 0 ? false:null"
-                  placeholder="john@example.com"
+                  placeholder="Abhijit@example.com"
                   autofocus
                 />
                 <small class="text-danger">{{ errors[0] }}</small>

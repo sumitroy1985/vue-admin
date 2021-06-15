@@ -3,10 +3,10 @@
     <b-row class="auth-inner m-0">
 
       <!-- Brand logo-->
-      <b-link class="brand-logo">
+      <b-link :to="{ path: '/super-dashboard'}" class="brand-logo">
         <vuexy-logo />
         <h2 class="brand-text text-primary ml-1">
-          Vuexy
+          Lazot Technologies
         </h2>
       </b-link>
       <!-- /Brand logo-->
@@ -41,7 +41,7 @@
             class="mb-1 font-weight-bold"
             title-tag="h2"
           >
-            Welcome to Vuexy! 👋
+            Welcome to Lazot Technologies!
           </b-card-title>
           <b-card-text class="mb-2">
             Please sign-in to your account and start the adventure
@@ -93,7 +93,7 @@
                     v-model="userEmail"
                     :state="errors.length > 0 ? false:null"
                     name="login-email"
-                    placeholder="john@example.com"
+                    placeholder="Abhijit@example.com"
                   />
                   <small class="text-danger">{{ errors[0] }}</small>
                 </validation-provider>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <form-wizard
-      color="#7367F0"
+      color="#0a71e9"
       :title="null"
       :subtitle="null"
       shape="square"
@@ -46,7 +46,7 @@
                     id="name"
                     v-model="name"
                     :state="errors.length > 0 ? false:null"
-                    placeholder="johndoe"
+                    placeholder="Abhijitdoe"
                   />
                   <small class="text-danger">{{ errors[0] }}</small>
                 </validation-provider>
@@ -67,7 +67,7 @@
                     v-model="emailValue"
                     type="email"
                     :state="errors.length > 0 ? false:null"
-                    placeholder="john.doe@email.com"
+                    placeholder="Abhijit.doe@email.com"
                   />
                   <small class="text-danger">{{ errors[0] }}</small>
                 </validation-provider>
@@ -152,7 +152,7 @@
                   <b-form-input
                     id="first-name"
                     v-model="first_name"
-                    placeholder="John"
+                    placeholder="Abhijit"
                     :state="errors.length > 0 ? false:null"
                   />
                   <small class="text-danger">{{ errors[0] }}</small>

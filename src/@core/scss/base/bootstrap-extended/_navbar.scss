@@ -3,7 +3,7 @@
     Description: Contain header navigation bar, vertical main navigation bar and
     horiznotal main navigation bar related SCSS.
     ----------------------------------------------------------------------------------------------
-    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+    Item Name: Lazot  - Vuejs, HTML & Laravel Admin Dashboard Template
     Author: Lazot Technologies
     Author URL: http://www.themeforest.net/user/Lazot Technologies
 ================================================================================================*/
@@ -667,4 +667,8 @@
       }
     }
   }
+}
+.dark-layout .dropdown-menu .dropdown-item {
+  display: flex;
+  align-items: center;
 }

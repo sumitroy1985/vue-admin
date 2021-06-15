@@ -6,7 +6,7 @@
       <!-- status -->
       <div class="d-flex align-items-center flex-wrap">
         <h5 class="font-weight-bolder mb-0 mr-1">
-          $ 100,000
+          ₹ 100,000
         </h5>
         <b-badge variant="light-secondary">
           <feather-icon

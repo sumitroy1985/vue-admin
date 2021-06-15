@@ -173,3 +173,8 @@
     }
   }
 }
+@media (min-width: 800px) {
+  .modal-dialog {
+    max-width: 650px;
+}
+}

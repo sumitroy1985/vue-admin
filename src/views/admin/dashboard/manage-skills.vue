@@ -6,7 +6,7 @@
         <div class="card-body">
           <div class="custom-search d-flex justify-content-between">
             <fieldset class="form-group d-flex">
-              <div class="d-flex align-items-center"><select class="d-inline-block form-control pr-4"><option>Sumit Roy</option><option>Mukesh Ambani</option><option>Ajim Premji</option></select></div>
+              <div class="d-flex align-items-center"><select class="d-inline-block form-control pr-4"><option>Sumit Roy</option><option>Sameer Rana</option><option>Subhadip Roy</option></select></div>
             </fieldset>
             <fieldset class="form-group">
               <div class="d-flex align-items-center">
@@ -248,7 +248,7 @@
           >
             <b-form-input
               id="v-name"
-              placeholder="Steve Jobs"
+              placeholder="Sumit Roy"
             />
           </b-form-group>
         </b-col>

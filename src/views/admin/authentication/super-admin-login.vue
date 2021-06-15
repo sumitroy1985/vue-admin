@@ -4,7 +4,7 @@
 
       <!-- Login v1 -->
       <b-card class="mb-0">
-        <b-link class="brand-logo">
+        <b-link :to="{ path: '/super-dashboard'}" class="brand-logo">
           <vuexy-logo />
 
           <h2 class="brand-text text-primary ml-1">
@@ -13,7 +13,7 @@
         </b-link>
 
         <b-card-title class="mb-1">
-          Welcome to Lazot World! 👋
+          Welcome to Lazot World!
         </b-card-title>
         <b-card-text class="mb-2">
           Please sign-in to your account and start the adventure

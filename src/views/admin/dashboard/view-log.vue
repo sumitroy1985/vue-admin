@@ -6,7 +6,7 @@
         <div class="card-body">
           <div class="custom-search d-flex justify-content-between">
             <fieldset class="form-group d-flex">
-              <div class="d-flex align-items-center"><select class="d-inline-block form-control pr-4"><option>Sumit Roy</option><option>Mukesh Ambani</option><option>Ajim Premji</option></select></div>
+              <div class="d-flex align-items-center"><select class="d-inline-block form-control pr-4"><option>Sumit Roy</option><option>Sameer Rana</option><option>Subhadip Roy</option></select></div>
             </fieldset>
             <fieldset class="form-group">
               <div class="d-flex align-items-center">
@@ -43,13 +43,13 @@
                   <tr class="">
                     <th class="vgt-checkbox-col"><input type="checkbox"></th>
                     <td class="vgt-left-align"><span>06:30 PM | 21th May 2021 </span></td>
-                    <td class="vgt-left-align"><span> Mukesh Ambani </span></td>
+                    <td class="vgt-left-align"><span> Sameer Rana </span></td>
                     <td class="vgt-left-align"><span> Jio Network issue </span></td>
                   </tr>
                   <tr class="">
                     <th class="vgt-checkbox-col"><input type="checkbox"></th>
                     <td class="vgt-left-align"><span>11:30 AM | 17th May 2021 </span></td>
-                    <td class="vgt-left-align"><span> Ajim Premji </span></td>
+                    <td class="vgt-left-align"><span> Subhadip Roy </span></td>
                     <td class="vgt-left-align"><span> Telecalling Issue Fix </span></td>
                   </tr>
                 </tbody>
@@ -88,7 +88,7 @@
           >
             <b-form-input
               id="v-name"
-              placeholder="Steve Jobs"
+              placeholder="Sumit Roy"
             />
           </b-form-group>
         </b-col>

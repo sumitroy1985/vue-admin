@@ -840,7 +840,7 @@ export default {
 .nav-tabs .nav-item a.nav-link.active {
     color: #fff !important;
     border-radius: 5px;
-    background-color: #5c55c1 !important;
+    background-color: #0a71e9 !important;
 }
 .nav-tabs .nav-item a.nav-link::after{
   display: none;

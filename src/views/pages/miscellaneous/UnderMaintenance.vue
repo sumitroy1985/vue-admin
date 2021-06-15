@@ -1,11 +1,11 @@
 <template>
   <!-- Under maintenance-->
   <div class="misc-wrapper">
-    <b-link class="brand-logo">
+    <b-link :to="{ path: '/super-dashboard'}" class="brand-logo">
       <vuexy-logo />
 
       <h2 class="brand-text text-primary ml-1">
-        Vuexy
+        Lazot Technologies
       </h2>
     </b-link>
 
@@ -27,7 +27,7 @@
           <b-form-input
             id="notify-email"
             class="col-12 col-md-5 mb-1 mr-md-2"
-            placeholder="john@example.com"
+            placeholder="Abhijit@example.com"
           />
 
           <b-button

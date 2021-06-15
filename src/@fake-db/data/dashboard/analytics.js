@@ -2,7 +2,7 @@ import mock from '@/@fake-db/mock'
 /* eslint-disable global-require */
 const data = {
   congratulations: {
-    name: 'John',
+    name: 'Abhijit',
     saleToday: '57.6',
   },
   subscribersGained: {
@@ -65,9 +65,9 @@ const data = {
     },
     step2: {
       title: 'Client Meeting',
-      subtitle: 'Project meeting with john @10:15am',
+      subtitle: 'Project meeting with Abhijit @10:15am',
       avatar: require('@/assets/images/portrait/small/avatar-s-9.jpg'),
-      avatarName: 'John Doe (Client)',
+      avatarName: 'Abhijit Das(Client)',
       occupation: 'CEO of Infibeam',
       duration: '45 min ago',
     },

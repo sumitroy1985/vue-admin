@@ -77,7 +77,7 @@
         class="mb-2"
       >
         <b-card-text class="mb-50">
-          Deployment: ${{ data.goal }}
+          Deployment: {{ data.goal }}K
         </b-card-text>
         <b-progress
           value="50"

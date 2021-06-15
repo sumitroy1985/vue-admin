@@ -54,7 +54,7 @@
           </div>
 
           <!-- Brands -->
-          <div class="brands">
+          <!-- <div class="brands">
             <h6 class="filter-title">
               Brands
             </h6>
@@ -64,10 +64,10 @@
               stacked
               :options="filterOptions.brands"
             />
-          </div>
+          </div> -->
 
           <!-- Ratings -->
-          <div class="ratings">
+          <!-- <div class="ratings">
             <h6 class="filter-title">
               Ratings
             </h6>
@@ -92,7 +92,7 @@
                 <span>{{ rating.count }}</span>
               </div>
             </div>
-          </div>
+          </div> -->
         </b-card>
       </div>
     </div>
@@ -107,7 +107,7 @@
 
 <script>
 import {
-  BRow, BCol, BCard, BFormRadioGroup, BLink,
+  BRow, BCol, BCard, BFormRadioGroup,
 } from 'bootstrap-vue'
 import VueSlider from 'vue-slider-component'
 
@@ -116,7 +116,6 @@ export default {
     BRow,
     BCol,
     BFormRadioGroup,
-    BLink,
     BCard,
 
     // 3rd Party

@@ -3,7 +3,7 @@
     v-if="data"
     class="card-congratulation-medal"
   >
-    <h5>Congratulations 🎉 Abhijit!</h5>
+    <h5>Congratulations  Abhijit!</h5>
     <b-card-text class="font-small-3">
       Check all The Orders here
     </b-card-text>

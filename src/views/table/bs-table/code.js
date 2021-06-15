@@ -401,7 +401,7 @@ export default {
         },
       ],
       items: [
-        { name: { first: 'John', last: 'Doe' }, sex: 'Male', age: 42 },
+        { name: { first: 'Abhijit', last: 'Doe' }, sex: 'Male', age: 42 },
         { name: { first: 'Clemens', last: 'Doe' }, sex: 'Female', age: 36 },
         { name: { first: 'Rubin', last: 'Kincade' }, sex: 'male', age: 73 },
         { name: { first: 'Shirley', last: 'Partridge' }, sex: 'female', age: 62 },

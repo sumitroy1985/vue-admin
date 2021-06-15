@@ -40,10 +40,10 @@ export default {
               value: [4300, 6500, 20000, 25000, 30000, 19000, 30000, 40000],
               name: 'Point One',
               itemStyle: {
-                color: '#7367F0',
+                color: '#0a71e9',
               },
               areaStyle: {
-                color: '#7367F0',
+                color: '#0a71e9',
                 opacity: 0.8,
               },
             },

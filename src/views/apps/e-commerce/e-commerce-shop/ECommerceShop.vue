@@ -106,32 +106,16 @@
         <!-- Product Details -->
         <b-card-body>
           <div class="item-wrapper">
-            <div class="item-rating">
-              <ul class="unstyled-list list-inline">
-                <li
-                  v-for="star in 5"
-                  :key="star"
-                  class="ratings-list-item"
-                  :class="{'ml-25': star-1}"
-                >
-                  <feather-icon
-                    icon="StarIcon"
-                    size="16"
-                    :class="[{'fill-current': star <= product.rating}, star <= product.rating ? 'text-warning' : 'text-muted']"
-                  />
-                </li>
-              </ul>
-            </div>
             <div>
               <h6 class="item-price">
-                ${{ product.price }}
+                ₹{{ product.price }}
               </h6>
             </div>
           </div>
           <h6 class="item-name">
             <b-link
               class="text-body"
-              :to="{ name: 'apps-e-commerce-product-details', params: { slug: product.slug } }"
+              :to="{ name: '', params: { slug: product.slug } }"
             >
               {{ product.name }}
             </b-link>
@@ -145,42 +129,6 @@
             {{ product.description }}
           </b-card-text>
         </b-card-body>
-
-        <!-- Product Actions -->
-        <div class="item-options text-center">
-          <div class="item-wrapper">
-            <div class="item-cost">
-              <h4 class="item-price">
-                ${{ product.price }}
-              </h4>
-            </div>
-          </div>
-          <b-button
-            variant="light"
-            tag="a"
-            class="btn-wishlist"
-            @click="toggleProductInWishlist(product)"
-          >
-            <feather-icon
-              icon="HeartIcon"
-              class="mr-50"
-              :class="{'text-danger': product.isInWishlist}"
-            />
-            <span>Wishlist</span>
-          </b-button>
-          <b-button
-            variant="primary"
-            tag="a"
-            class="btn-cart"
-            @click="handleCartActionClick(product)"
-          >
-            <feather-icon
-              icon="ShoppingCartIcon"
-              class="mr-50"
-            />
-            <span>{{ product.isInCart ? 'View In Cart' : 'Add to Cart' }}</span>
-          </b-button>
-        </div>
       </b-card>
     </section>
 
@@ -228,7 +176,7 @@
 
 <script>
 import {
-  BDropdown, BDropdownItem, BFormRadioGroup, BFormRadio, BRow, BCol, BInputGroup, BInputGroupAppend, BFormInput, BCard, BCardBody, BLink, BImg, BCardText, BButton, BPagination,
+  BDropdown, BDropdownItem, BFormRadioGroup, BFormRadio, BRow, BCol, BInputGroup, BInputGroupAppend, BFormInput, BCard, BCardBody, BLink, BImg, BCardText, BPagination,
 } from 'bootstrap-vue'
 import Ripple from 'vue-ripple-directive'
 import { watch } from '@vue/composition-api'
@@ -257,7 +205,6 @@ export default {
     BLink,
     BImg,
     BCardText,
-    BButton,
     BPagination,
 
     // SFC

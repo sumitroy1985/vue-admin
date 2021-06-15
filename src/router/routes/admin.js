@@ -97,9 +97,9 @@ export default [
     },
   },
   {
-    path: '/manage-company-admin',
-    name: 'manage-company-admin',
-    component: () => import('@/views/admin/dashboard/manage-company-admin.vue'),
+    path: '/manage-company',
+    name: 'manage-company',
+    component: () => import('@/views/admin/dashboard/manage-company.vue'),
     meta: {
       pageTitle: 'Manage Company',
       breadcrumb: [
@@ -114,9 +114,9 @@ export default [
     },
   },
   {
-    path: '/manage-skills-admin',
-    name: 'manage-skills-admin',
-    component: () => import('@/views/admin/dashboard/manage-skills-admin.vue'),
+    path: '/manage-skills',
+    name: 'manage-skills',
+    component: () => import('@/views/admin/dashboard/manage-skills.vue'),
     meta: {
       pageTitle: 'Manage Skills',
       breadcrumb: [
@@ -131,26 +131,26 @@ export default [
     },
   },
   {
-    path: '/manage-order-admin',
-    name: 'manage-order-admin',
-    component: () => import('@/views/admin/dashboard/manage-order-admin.vue'),
+    path: '/manage-account',
+    name: 'manage-account',
+    component: () => import('@/views/admin/dashboard/manage-account.vue'),
     meta: {
-      pageTitle: 'Manage Order',
+      pageTitle: 'Manage Account',
       breadcrumb: [
         {
           text: 'Dashboard',
         },
         {
-          text: 'Manage Order',
+          text: 'Manage Account',
           active: true,
         },
       ],
     },
   },
   {
-    path: '/manage-people-admin',
-    name: 'manage-people-admin',
-    component: () => import('@/views/admin/dashboard/manage-people-admin.vue'),
+    path: '/manage-people',
+    name: 'manage-people',
+    component: () => import('@/views/admin/dashboard/manage-people.vue'),
     meta: {
       pageTitle: 'Manage People',
       breadcrumb: [
@@ -165,9 +165,9 @@ export default [
     },
   },
   {
-    path: '/manage-app-admin',
-    name: 'manage-app-admin',
-    component: () => import('@/views/admin/dashboard/manage-app-admin.vue'),
+    path: '/manage-app',
+    name: 'manage-app',
+    component: () => import('@/views/admin/dashboard/manage-app.vue'),
     meta: {
       pageTitle: 'Manage App',
       breadcrumb: [
@@ -193,6 +193,108 @@ export default [
         },
         {
           text: 'View Log',
+          active: true,
+        },
+      ],
+    },
+  },
+  {
+    path: '/super-admin-order',
+    name: 'super-admin-order',
+    component: () => import('@/views/admin/dashboard/super-admin-order.vue'),
+    meta: {
+      pageTitle: 'Super Admin Order',
+      breadcrumb: [
+        {
+          text: 'Dashboard',
+        },
+        {
+          text: 'Super Admin Order',
+          active: true,
+        },
+      ],
+    },
+  },
+  {
+    path: '/company-order',
+    name: 'company-order',
+    component: () => import('@/views/admin/dashboard/company-order.vue'),
+    meta: {
+      pageTitle: 'Company Order',
+      breadcrumb: [
+        {
+          text: 'Dashboard',
+        },
+        {
+          text: 'Company Order',
+          active: true,
+        },
+      ],
+    },
+  },
+  {
+    path: '/company-wifi',
+    name: 'company-wifi',
+    component: () => import('@/views/admin/dashboard/company-wifi.vue'),
+    meta: {
+      pageTitle: 'Wifi Director',
+      breadcrumb: [
+        {
+          text: 'Manage Infrastructure',
+        },
+        {
+          text: 'Wifi Director',
+          active: true,
+        },
+      ],
+    },
+  },
+  {
+    path: '/company-mesh',
+    name: 'company-mesh',
+    component: () => import('@/views/admin/dashboard/company-mesh.vue'),
+    meta: {
+      pageTitle: 'Mesh Network',
+      breadcrumb: [
+        {
+          text: 'Manage Infrastructure',
+        },
+        {
+          text: 'Mesh Network',
+          active: true,
+        },
+      ],
+    },
+  },
+  {
+    path: '/company-knx',
+    name: 'company-knx',
+    component: () => import('@/views/admin/dashboard/company-knx.vue'),
+    meta: {
+      pageTitle: 'KNX Communication',
+      breadcrumb: [
+        {
+          text: 'Manage Infrastructure',
+        },
+        {
+          text: 'KNX Communication',
+          active: true,
+        },
+      ],
+    },
+  },
+  {
+    path: '/company-lorawan',
+    name: 'company-lorawan',
+    component: () => import('@/views/admin/dashboard/company-lorawan.vue'),
+    meta: {
+      pageTitle: 'Lorawan',
+      breadcrumb: [
+        {
+          text: 'Manage Infrastructure',
+        },
+        {
+          text: 'Lorawan',
           active: true,
         },
       ],

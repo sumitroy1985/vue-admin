@@ -25,12 +25,12 @@
           <h6>Client Meeting</h6>
           <small class="text-muted">45 min ago</small>
         </div>
-        <p>Project meeting with john @10:15am.</p>
+        <p>Project meeting with Abhijit @10:15am.</p>
         <b-media>
           <template #aside>
             <b-avatar :src="require('@/assets/images/avatars/8-small.png')" />
           </template>
-          <h6>John Doe (Client)</h6>
+          <h6>Abhijit Das(Client)</h6>
           <p class="mb-0">
             CEO of Infibeam
           </p>

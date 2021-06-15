@@ -171,7 +171,6 @@ export default [
         },
         {
           text: 'Shop',
-          active: true,
         },
         {
           text: 'Product Details',

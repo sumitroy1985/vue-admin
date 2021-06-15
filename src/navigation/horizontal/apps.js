@@ -55,7 +55,7 @@ export default [
           },
           {
             title: 'Details',
-            route: { name: 'apps-e-commerce-product-details', params: { slug: 'apple-watch-series-5-27' } },
+            route: { name: '', params: { slug: '' } },
           },
           {
             title: 'Wishlist',

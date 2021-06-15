@@ -33,7 +33,7 @@
           <b-col
             cols="12"
             md="5"
-            class="d-flex align-items-center justify-content-center mb-2 mb-md-0"
+            class="d-flex align-items-center justify-content-center mb-2 mb-md-0 product-details-bg"
           >
             <div class="d-flex align-items-center justify-content-center">
               <b-img
@@ -67,19 +67,6 @@
               <h4 class="item-price mr-1">
                 ${{ product.price }}
               </h4>
-              <ul class="unstyled-list list-inline pl-1 border-left">
-                <li
-                  v-for="star in 5"
-                  :key="star"
-                  class="ratings-list-item mr-25"
-                >
-                  <feather-icon
-                    icon="StarIcon"
-                    size="18"
-                    :class="[{'fill-current': star <= product.rating}, star <= product.rating ? 'text-warning' : 'text-muted']"
-                  />
-                </li>
-              </ul>
             </div>
 
             <!-- Avability -->
@@ -87,89 +74,6 @@
 
             <!-- Product Description -->
             <b-card-text>{{ product.description }}</b-card-text>
-
-            <!-- Product Meta [Free shpping, EMI, etc.] -->
-            <ul class="product-features list-unstyled">
-              <li v-if="product.hasFreeShipping">
-                <feather-icon icon="ShoppingCartIcon" />
-                <span>Free Shipping</span></li>
-              <li>
-                <feather-icon icon="DollarSignIcon" />
-                <span>EMI options available</span>
-              </li>
-            </ul>
-
-            <hr>
-
-            <!-- Colors -->
-            <div class="product-color-options">
-              <h6>Colors</h6>
-              <ul class="list-unstyled mb-0">
-                <li
-                  v-for="color in product.colorOptions"
-                  :key="color"
-                  class="d-inline-block"
-                  :class="{'selected': selectedColor === color}"
-                  @click="selectedColor = color"
-                >
-                  <div
-                    class="color-option"
-                    :class="`b-${color}`"
-                  >
-                    <div
-                      class="filloption"
-                      :class="`bg-${color}`"
-                    />
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <hr>
-
-            <div class="d-flex flex-column flex-sm-row pt-1">
-              <b-button
-                v-ripple.400="'rgba(255, 255, 255, 0.15)'"
-                variant="primary"
-                class="btn-cart mr-0 mr-sm-1 mb-1 mb-sm-0"
-                @click="handleCartActionClick(product)"
-              >
-                <feather-icon
-                  icon="ShoppingCartIcon"
-                  class="mr-50"
-                />
-                <span>{{ product.isInCart ? 'View In Cart' : 'Add to Cart' }}</span>
-              </b-button>
-              <b-button
-                variant="outline-secondary"
-                class="btn-wishlist mr-0 mr-sm-1 mb-1 mb-sm-0"
-                @click="toggleProductInWishlist(product)"
-              >
-                <feather-icon
-                  icon="HeartIcon"
-                  class="mr-50"
-                  :class="{'text-danger': product.isInWishlist}"
-                />
-                <span>Wishlist</span>
-              </b-button>
-              <b-dropdown
-                variant="outline-secondary"
-                no-caret
-                toggle-class="btn-icon"
-                class="btn-share"
-                right
-              >
-                <template #button-content>
-                  <feather-icon icon="Share2Icon" />
-                </template>
-                <b-dropdown-item
-                  v-for="icon in [ 'FacebookIcon', 'TwitterIcon', 'YoutubeIcon', 'InstagramIcon', ]"
-                  :key="icon"
-                >
-                  <feather-icon :icon="icon" />
-                </b-dropdown-item>
-              </b-dropdown>
-            </div>
           </b-col>
         </b-row>
       </b-card-body>
@@ -179,7 +83,7 @@
 
       <!-- Static Content -->
       <!-- Slider: Related Products -->
-      <e-commerce-product-details-related-products />
+      <!-- <e-commerce-product-details-related-products /> -->
     </b-card>
   </section>
 </template>
@@ -189,11 +93,11 @@ import { useRouter } from '@core/utils/utils'
 import store from '@/store'
 import { ref } from '@vue/composition-api'
 import {
-  BCard, BCardBody, BRow, BCol, BImg, BCardText, BLink, BButton, BDropdown, BDropdownItem, BAlert,
+  BCard, BCardBody, BRow, BCol, BImg, BCardText, BLink, BAlert,
 } from 'bootstrap-vue'
 import Ripple from 'vue-ripple-directive'
 import ECommerceProductDetailsItemFeatures from './ECommerceProductDetailsItemFeatures.vue'
-import ECommerceProductDetailsRelatedProducts from './ECommerceProductDetailsRelatedProducts.vue'
+// import ECommerceProductDetailsRelatedProducts from './ECommerceProductDetailsRelatedProducts.vue'
 import { useEcommerceUi } from '../useEcommerce'
 
 export default {
@@ -209,14 +113,11 @@ export default {
     BImg,
     BCardText,
     BLink,
-    BButton,
-    BDropdown,
-    BDropdownItem,
     BAlert,
 
     // SFC
     ECommerceProductDetailsItemFeatures,
-    ECommerceProductDetailsRelatedProducts,
+    // ECommerceProductDetailsRelatedProducts,
   },
   setup() {
     const { handleCartActionClick, toggleProductInWishlist } = useEcommerceUi()

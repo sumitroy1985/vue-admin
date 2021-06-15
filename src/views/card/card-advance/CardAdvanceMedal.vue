@@ -1,11 +1,11 @@
 <template>
   <b-card class="card-congratulation-medal">
-    <h5>Congratulations 🎉 John!</h5>
+    <h5>Congratulations  Abhijit!</h5>
     <b-card-text class="font-small-3">
       You have won gold medal
     </b-card-text>
     <h3 class="mb-75 mt-4">
-      <b-link>$48.9k</b-link>
+      <b-link>₹48.9k </b-link>
     </h3>
     <b-button
       v-ripple.400="'rgba(255, 255, 255, 0.15)'"

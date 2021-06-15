@@ -129,7 +129,7 @@ export default {
     /* eslint-disable global-require */
     const notifications = [
       {
-        title: 'Congratulation Sam 🎉',
+        title: 'Congratulation Sam ',
         avatar: require('@/assets/images/avatars/6-small.png'),
         subtitle: 'Won the monthly best seller badge',
         type: 'light-success',
@@ -141,7 +141,7 @@ export default {
         type: 'light-info',
       },
       {
-        title: 'Revised Order 👋',
+        title: 'Revised Order',
         avatar: 'MD',
         subtitle: 'MD Inc. order updated',
         type: 'light-danger',

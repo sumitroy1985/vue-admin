@@ -16,7 +16,7 @@
             This Month
           </b-card-text>
           <h3 class="font-weight-bolder">
-            <sup class="font-medium-1">$ </sup>
+            <sup class="font-medium-1">₹ </sup>
             <span class="text-primary">{{ revenue.thisMonth }}</span>
           </h3>
         </div>
@@ -25,7 +25,7 @@
             Last Month
           </b-card-text>
           <h3 class="font-weight-bolder">
-            <sup class="font-medium-1">$ </sup>
+            <sup class="font-medium-1">₹ </sup>
             <span>{{ revenue.lastMonth }}</span>
           </h3>
         </div>

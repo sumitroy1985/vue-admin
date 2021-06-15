@@ -540,7 +540,7 @@ export default {
         show: true,
         position: 'bottom',
       },
-      colors: ['#7367F0'],
+      colors: ['#0a71e9'],
       plotOptions: {
         heatmap: {
           enableShades: false,
@@ -581,7 +581,7 @@ export default {
                 from: 51,
                 to: 60,
                 name: '50-60',
-                color: '#7367f0',
+                color: '#0a71e9',
               },
             ],
           },

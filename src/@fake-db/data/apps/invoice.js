@@ -10,7 +10,7 @@ const data = {
       client: {
         address: '7777 Mendez Plains',
         company: 'Hall-Robbins PLC',
-        companyEmail: 'don85@johnson.com',
+        companyEmail: 'don85@Abhijitson.com',
         country: 'USA',
         contact: '(616) 865-4180',
         name: 'Jordan Stevenson',
@@ -405,7 +405,7 @@ const data = {
       issuedDate: '30 Nov 2019',
       client: {
         address: '25135 Christopher Creek',
-        company: 'Hawkins, Johnston and Mcguire PLC',
+        company: 'Hawkins, Abhijitston and Mcguire PLC',
         companyEmail: 'jenny96@lawrence-thompson.com',
         country: 'Kiribati',
         contact: '(274) 246-3725',
@@ -460,7 +460,7 @@ const data = {
       client: {
         address: '811 Jill Skyway',
         company: 'Jones PLC Ltd',
-        companyEmail: 'pricetodd@johnson-jenkins.com',
+        companyEmail: 'pricetodd@Abhijitson-jenkins.com',
         country: 'Brazil',
         contact: '(585) 829-2603',
         name: 'Laurie Summers',
@@ -676,7 +676,7 @@ const data = {
       client: {
         address: '276 Michael Gardens Apt. 004',
         company: 'Shea, Velez and Garcia LLC',
-        companyEmail: 'zjohnson@nichols-powers.com',
+        companyEmail: 'zAbhijitson@nichols-powers.com',
         country: 'Philippines',
         contact: '(817) 700-2984',
         name: 'Christopher Allen',
@@ -747,7 +747,7 @@ const data = {
       issuedDate: '18 May 2019',
       client: {
         address: '86580 Sarah Bridge',
-        company: 'Farmer, Johnson and Anderson Group',
+        company: 'Farmer, Abhijitson and Anderson Group',
         companyEmail: 'robertscott@garcia.com',
         country: 'Cameroon',
         contact: '(775) 366-0411',
@@ -765,7 +765,7 @@ const data = {
       issuedDate: '29 Oct 2019',
       client: {
         address: '49709 Edwin Ports Apt. 353',
-        company: 'Sherman-Johnson PLC',
+        company: 'Sherman-Abhijitson PLC',
         companyEmail: 'desiree61@kelly.com',
         country: 'Macedonia',
         contact: '(510) 536-6029',
@@ -802,7 +802,7 @@ const data = {
       client: {
         address: '141 Adrian Ridge Suite 550',
         company: 'Stone-Zimmerman Group',
-        companyEmail: 'john77@anderson.net',
+        companyEmail: 'Abhijit77@anderson.net',
         country: 'Falkland Islands (Malvinas)',
         contact: '(612) 546-3485',
         name: 'Jennifer Summers',

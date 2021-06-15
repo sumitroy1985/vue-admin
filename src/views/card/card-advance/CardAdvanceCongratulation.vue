@@ -25,7 +25,7 @@
       />
     </b-avatar>
     <h1 class="mb-1 mt-50 text-white">
-      Congratulations John,
+      Congratulations Abhijit,
     </h1>
     <b-card-text class="m-auto w-75">
       You have done <strong>57.6%</strong> more sales today. Check your new badge in your profile.

@@ -3,7 +3,7 @@
     <b-row class="auth-inner m-0">
 
       <!-- Brand logo-->
-      <b-link class="brand-logo">
+      <b-link :to="{ path: '/super-dashboard'}" class="brand-logo">
         <vuexy-logo />
         <h2 class="brand-text text-primary ml-1">
           Lazot Technologies Pvt Ltd
@@ -41,7 +41,7 @@
             title-tag="h2"
             class="font-weight-bold mb-1"
           >
-            Welcome to Lazot World! 👋
+            Welcome to Lazot World!
           </b-card-title>
           <b-card-text class="mb-2">
             Please sign-in to your account and start the adventure
@@ -267,5 +267,8 @@ export default {
 .disabled-input:-moz-placeholder {
   color: #fff !important;
   font-size: 13px !important;
+}
+.brand-logo .brand-text{
+    line-height: 40px;
 }
 </style>

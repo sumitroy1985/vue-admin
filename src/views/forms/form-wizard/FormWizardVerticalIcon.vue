@@ -1,7 +1,7 @@
 <template>
   <div>
     <form-wizard
-      color="#7367F0"
+      color="#0a71e9"
       :title="null"
       :subtitle="null"
       layout="vertical"
@@ -35,7 +35,7 @@
             >
               <b-form-input
                 id="vi-username"
-                placeholder="johndoe"
+                placeholder="Abhijitdoe"
               />
             </b-form-group>
           </b-col>
@@ -47,7 +47,7 @@
               <b-form-input
                 id="vi-email"
                 type="email"
-                placeholder="john.doe@email.com"
+                placeholder="Abhijit.doe@email.com"
               />
             </b-form-group>
           </b-col>
@@ -100,7 +100,7 @@
             >
               <b-form-input
                 id="vi-first-name"
-                placeholder="John"
+                placeholder="Abhijit"
               />
             </b-form-group>
           </b-col>

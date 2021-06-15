@@ -2,14 +2,14 @@
     File Name: VxTour.vue
     Description: Tour Component
     ----------------------------------------------------------------------------------------
-    Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+    Item Name: Lazot - Vuejs, HTML & Laravel Admin Dashboard Template
       Author: Lazot Technologies
     Author URL: http://www.themeforest.net/user/Lazot Technologies
 ========================================================================================== -->
 
 <template>
   <v-tour
-    name="vuexyTour"
+    name="LazotTour"
     :steps="steps"
   >
     <template slot-scope="tour">

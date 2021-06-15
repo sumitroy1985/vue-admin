@@ -2,7 +2,7 @@
 // 	File Name: app-ecommerce.scss
 // 	Description: SCSS file for ecommerce shop, wishlist and checkout page.
 // 	----------------------------------------------------------------------------------------------
-// 	Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+// 	Item Name: Lazot  - Vuejs, HTML & Laravel Admin Dashboard Template
 // 	Author: Lazot Technologies
 // 	Author URL: http://www.themeforest.net/user/Lazot Technologies
 // ================================================================================================
@@ -65,7 +65,7 @@ $search-bar-height: 48px;
           transform: translate(-50%, -15%);
 
           &:before {
-            content: '$ ';
+            content: '₹ ';
           }
         }
         &:active {
@@ -629,4 +629,33 @@ $search-bar-height: 48px;
       grid-template-columns: 1fr;
     }
   }
+}
+.ecommerce-application .grid-view .ecommerce-card .item-img {
+  min-height: 15.85rem;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  max-height: 15.85rem;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+}
+.ecommerce-application .grid-view .ecommerce-card .item-img img.card-img-top{
+  height: auto;
+  width: auto;
+  max-height: 200px;
+}
+.product-details-bg .align-items-center{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.ecommerce-application .app-ecommerce-details .product-img {
+  width: auto;
+  max-height: 250px !important;
+}
+.ecommerce-application .grid-view .ecommerce-card .item-price {
+  font-weight: 600;
+  font-size: 20px;
+  color: #0a71e9;
 }

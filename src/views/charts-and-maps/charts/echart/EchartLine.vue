@@ -6,7 +6,7 @@
       </div>
       <div class="d-flex align-content-center mb-1 mb-sm-0">
         <h1 class="font-weight-bolder ">
-          $ 183,382
+          ₹ 183,382
         </h1>
         <div class="pt-25 ml-75">
           <b-badge variant="light-secondary">

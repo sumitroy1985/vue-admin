@@ -19,10 +19,9 @@
         <ul class="nav navbar-nav flex-row">
 
           <!-- Logo & Text -->
-          <li class="nav-item mr-auto">
+          <li class="nav-item mr-auto tre">
             <b-link
               class="navbar-brand"
-              to="/"
             >
               <span class="brand-logo">
                 <b-img
@@ -30,8 +29,8 @@
                   alt="logo"
                 />
               </span>
-              <h2 class="brand-text">
-                {{ appName }}
+              <h2 class="brand-text logo-text">
+                Lazot Admin
               </h2>
             </b-link>
           </li>
@@ -159,4 +158,7 @@ export default {
 
 <style lang="scss">
 @import "~@core/scss/base/core/menu/menu-types/vertical-menu.scss";
+h2.logo-text{
+  font-size: 16px !important;
+}
 </style>

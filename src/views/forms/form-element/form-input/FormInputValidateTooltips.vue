@@ -127,7 +127,7 @@ export default {
   },
   data() {
     return {
-      value1: 'John',
+      value1: 'Abhijit',
       value2: 'Doe',
       value3: '',
       codeValidateTooltips,

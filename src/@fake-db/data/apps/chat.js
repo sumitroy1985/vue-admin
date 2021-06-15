@@ -8,7 +8,7 @@ const data = {
   profileUser: {
     id: 11,
     avatar: require('@/assets/images/avatars/8.png'),
-    fullName: 'John Doe',
+    fullName: 'Abhijit Doe',
     role: 'admin',
     about:
       'Dessert chocolate cake lemon drops jujubes. Biscuit cupcake ice cream bear claw brownie brownie marshmallow.',
@@ -156,7 +156,7 @@ const data = {
           senderId: 11,
         },
         {
-          message: 'Hey John, I am looking for the best admin template. Could you please help me to find it out?',
+          message: 'Hey Abhijit, I am looking for the best admin template. Could you please help me to find it out?',
           time: 'Mon Dec 10 2018 07:45:23 GMT+0000 (GMT)',
           senderId: 1,
         },

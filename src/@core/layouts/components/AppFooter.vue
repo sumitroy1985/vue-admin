@@ -10,12 +10,12 @@
       <span class="d-none d-sm-inline-block">, All rights Reserved</span>
     </span>
 
-    <span class="float-md-right d-none d-md-block">Hand-crafted &amp; Made with
-      <feather-icon
-        icon="HeartIcon"
-        size="21"
-        class="text-danger stroke-current"
-      />
+    <span class="float-md-right d-none d-md-block">Made By <b-link
+        class="ml-25"
+        href="https://lazot.com/"
+        target="_blank"
+      >Lazot Technologies</b-link>
+      <img src="@/assets/images/logo/logo.png" class="logo footer-logo" alt="Logo" />
     </span>
   </p>
 </template>
@@ -29,3 +29,9 @@ export default {
   },
 }
 </script>
+<style>
+  .footer-logo{
+    max-width: 20px;
+    margin-left: 10px;
+  }
+</style>

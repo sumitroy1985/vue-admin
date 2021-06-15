@@ -58,7 +58,7 @@
                 something wonderful, that's what matters to me.
               </p>
               <footer class="blockquote-footer">
-                Steve Jobs
+                Sumit Roy
                 <cite title="Source Title">Entrepreneur</cite>
               </footer>
             </blockquote>
@@ -75,7 +75,7 @@
           </b-card-title>
           <b-card-text>
             Add a <code class="highlighter-rouge">.border-{left/right}-{color} .border-{left/right}-3</code> helper
-            classes, where color can be any color from Vuexy Admin color palette.
+            classes, where color can be any color from LazotAdmin color palette.
           </b-card-text>
           <blockquote class="blockquote pl-1 border-left-primary border-left-3">
             <p class="mb-0">
@@ -83,7 +83,7 @@
               your other innovations.
             </p>
             <footer class="blockquote-footer">
-              Steve Jobs
+              Sumit Roy
               <cite title="Source Title">Entrepreneur</cite>
             </footer>
           </blockquote>
@@ -93,7 +93,7 @@
               your other innovations.
             </p>
             <footer class="blockquote-footer">
-              Steve Jobs
+              Sumit Roy
               <cite title="Source Title">Entrepreneur</cite>
             </footer>
           </blockquote>
@@ -123,7 +123,7 @@
               </b-media-body>
             </b-media>
             <footer class="blockquote-footer text-right">
-              Steve Jobs
+              Sumit Roy
               <cite title="Source Title">Entrepreneur</cite>
             </footer>
           </blockquote>
@@ -146,7 +146,7 @@
               </b-media-body>
             </b-media>
             <footer class="blockquote-footer text-right">
-              Steve Jobs
+              Sumit Roy
               <cite title="Source Title">Entrepreneur</cite>
             </footer>
           </blockquote>

@@ -2,7 +2,7 @@
 //  File Name: app-ecommerce-details.scss
 //  Description: App Ecommerce Details SCSS.
 //  ----------------------------------------------------------------------------------------------
-//  Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+//  Item Name: Lazot  - Vuejs, HTML & Laravel Admin Dashboard Template
 //  Author: Lazot Technologies
 //  Author URL: http://www.themeforest.net/user/Lazot Technologies
 // ================================================================================================
@@ -285,4 +285,13 @@
       }
     }
   }
+}
+.product-details-bg .align-items-center{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.ecommerce-application .app-ecommerce-details .product-img {
+  width: auto;
+  max-height: 250px !important;
 }
